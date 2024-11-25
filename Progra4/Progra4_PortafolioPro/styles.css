@@ -1,0 +1,291 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: "Rubik Dirt", Arial,sans-serif;
+}
+
+.seccion-oscura{
+    color: aliceblue;
+    background-color: rgb(27, 44, 38);
+}
+
+.seccion-clara{
+    color: black;
+    background-color: aliceblue;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Rubik Dirt", Arial,sans-serif;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #80804d;
+}
+
+.navbar{
+    padding: 2rem;
+    background-color: aquamarine;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero{
+    background-color: rgb(156, 236, 183);
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero_imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+    margin: 20px;
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: rgb(39, 34, 68);
+}
+
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+.proyectos-recientes{
+    padding: 40px;
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+    padding: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto{
+    position: relative;
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna{
+    padding: 20;
+    border: 2px solid #80804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+    color: white;
+    background-color: darkslategrey;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: chartreuse;
+    background-color: black;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge-contenedor{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+.testimonios{
+    padding: 40px 40px 80px 40px; 
+}
+
+.testimonios .carousel{
+    max-width:  800px;
+}
+
+.carousel-item{
+    height: 500px;
+    width: 800px;
+}
+
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen{
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto{
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.testimonio-info{
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p{
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente{
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo{
+    font-size: 0.9rem;
+    color: darkgray;
+}
+
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: royalblue;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: aliceblue;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em, 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.contacto button i{
+    color: antiquewhite;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    color: black;
+}
+
+@media screen and (max-width: 767px){
+    .navbar-brand img{
+        padding-top: 13px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .hero-inferior-img{
+        max-width: 600px;
+    }
+}
